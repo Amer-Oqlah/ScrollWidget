@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="avertra.scrolldown.ScrollDown" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Scroll Down</name>
+    <description>Page ScrollDown</description>
+    <icon
+    
+    />
+    <properties>
+        <propertyGroup caption="General">
+          <property key="Expression" type="expression" defaultValue="false">
+	        <caption>Expression</caption>
+	        <description> Logic when true Auto-Scroll to the location of the widget</description>
+	        <returnType type="Boolean" />
+          </property>
+          <property key="Time" type="integer" defaultValue="300">
+	        <caption>Time</caption>
+	        <description>wait Time To scroll after the expression becomes true in ms</description>
+          </property>
+          <property key="block" type="enumeration" defaultValue="start">
+       	    <caption>block</caption>
+	         <description>Defines vertical alignment related to the target element </description>
+	         <enumerationValues>
+	           <enumerationValue key="start">start</enumerationValue>
+		       <enumerationValue key="center">center</enumerationValue>
+		       <enumerationValue key="end">end</enumerationValue>
+               <enumerationValue key="nearest">nearest</enumerationValue>
+	         </enumerationValues>
+          </property>
+          <property key="behavior" type="enumeration" defaultValue="smooth">
+       	    <caption>behavior</caption>
+	         <description>Defines the transition animation </description>
+	         <enumerationValues>
+	           <enumerationValue key="smooth">smooth</enumerationValue>
+		       <enumerationValue key="auto">auto</enumerationValue>
+	         </enumerationValues>
+          </property>
+        </propertyGroup>
+    </properties>
+</widget>

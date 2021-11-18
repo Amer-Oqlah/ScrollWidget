@@ -1,0 +1,33 @@
+{
+  "name": "scrolldown",
+  "widgetName": "ScrollDown",
+  "version": "1.0.0",
+  "description": "Page ScrollDown",
+  "copyright": "2020 Mendix Technology BV",
+  "author": "Amer Alkharashgah",
+  "engines": {
+    "node": ">=12"
+  },
+  "config": {
+    "projectPath": "../..//",
+    "mendixHost": "http://localhost:3000",
+    "developmentPort": "5000"
+  },
+  "packagePath": "avertra",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.0.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react-scroll": "^1.8.4"
+  }
+}
